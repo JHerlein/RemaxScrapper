@@ -92,13 +92,9 @@ for pagina in range(1,(paginas_round + 1)):
                 m2 = (item.find_all("img")[i].get("data-original-title")).split("Sup. Cubierta (m2)  ")[1]
                 
         if ambientes != "":
-            listAmb.append(ambientes)
-            #print(ambientes)
-            #print("se apendio el ambiente")
+            listAmb.append(ambientes)        
         elif ambientes == "":
-            listAmb.append(0)
-            #print(ambientes)
-            #print("se apendio el 0")
+            listAmb.append(0)            
         if dormitorios != "":
             listDorm.append(dormitorios)
         elif dormitorios == "":
@@ -111,20 +107,7 @@ for pagina in range(1,(paginas_round + 1)):
             listM2.append(m2)
         elif m2 == "":
             listM2.append(0)
-        
-        
-        
-        
-#         listAmb.append(soup_filtered_amb)
-#         listDorm.append(soup_filtered_dorm)
-#         listBan.append(soup_filtered_ban)
-#         listM2.append(soup_filtered_m2)
 
-    #  <span class="gallery-attr-item-value">3</span>, ambientes
-    #  <span class="gallery-attr-item-value">2</span>, dormitorios
-    #  <span class="gallery-attr-item-value">2</span>, baños
-    #  <span class="gallery-attr-item-value"> 178 </span> sup cubierta en metros
-     
 df_houses["ID"]= listID
 df_houses["Price"] = listPrice
 df_houses["Direccion"] = listDireccion
