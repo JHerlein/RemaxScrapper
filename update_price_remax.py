@@ -40,3 +40,4 @@ for id in df_houses_actualizado.index:
 df_houses_actualizado["variacion"] = ((df_houses_actualizado["New price"] / df_houses_actualizado["Price"]) - 1) * 100
 df_houses_actualizado_filtered = df_houses_actualizado[df_houses_actualizado["New price"] != 0]
 df_houses_actualizado_filtered[df_houses_actualizado_filtered["variacion"] != 0]
+print(df_houses_actualizado_filtered)
