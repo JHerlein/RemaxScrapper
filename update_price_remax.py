@@ -9,7 +9,7 @@ import pandas as pd
 
 #Actualizacion de datos
 
-df_houses_actualizado = pd.read_excel(r"C:\Users\Julian\Propiedades\remax_raw_data2.xlsx")
+df_houses_actualizado = pd.read_excel(r"...\remax_raw_data2.xlsx")
 df_houses_actualizado = df_houses_actualizado.drop(columns="Unnamed: 0")
 df_houses_actualizado = df_houses_actualizado.set_index("ID")
 
